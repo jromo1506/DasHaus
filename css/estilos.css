@@ -1,0 +1,309 @@
+
+/* FONTS PARA HX's */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* COLORES */
+
+:root {
+    --azul_Osc: 27,52, 95
+}
+
+/* CLASES UTILITARIAS */
+.flex-c{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-sa{
+   display: flex;
+   justify-content: space-around;
+}
+
+.flex-c-col{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* INTRODUCCION */
+
+.introduccion{
+    background-color: white;
+    /* padding: 50px 0px; */
+    padding-top: 50px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.logo .logo-dh{
+   height: 200px;
+}
+
+
+.cont-info-dasHaus{
+   display: flex;
+   justify-content: center;
+   color: black;
+   
+}
+
+.info-dasHaus{
+   text-align: justify;
+   width: 40vw;
+}
+
+.cont{
+  
+    margin: 0px 25%;
+}
+
+/* MUESTRA 3 IMAGENES */
+
+.img-show{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.img-show div img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; 
+}
+
+.img-cont{
+    width: 160px; /* Set the desired width for your images */
+    height: 160px; /* Set the desired height for your images */
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+
+
+.img-cont:hover{
+    cursor: pointer;
+    width: 200px; /* Set the desired width for your images */
+    height: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.815);
+}
+
+
+
+
+/* CUERPO 1 */
+
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(var(--azul_Osc));
+    
+
+}
+
+.paragraph h4
+{
+    font-family: 'Ubuntu', sans-serif !important;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    
+
+}
+
+.info-paragraph{
+    color: white;
+    text-align: justify;
+    width: 40vw;
+}
+
+.info-paragraph strong{
+    font-size: 17px;
+}
+
+
+.info-paragraph ul li{
+   margin: 15px;
+   color: rgb(116, 125, 179);
+ 
+}
+
+/* Cards con iconos */
+ .cont-info-cards{
+width: 60vw;
+ }
+
+ .info-cards{
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .card-icon{
+ font-size: 50px;
+ }
+
+ .card-info{
+    max-width: 150px;
+    text-align: center;
+
+ }
+
+ /* Cuerpo 2 */
+
+
+ .txt-center{
+    text-align: center;
+ }
+
+ .pm_img{
+    width: 40vw !important;
+ }
+
+ .pm_list{
+  text-align: justify;
+  justify-content: center;
+  display: flex;
+ 
+
+ }
+
+ .dc_flex{
+    display: flex;
+
+    justify-content: space-around;
+ }
+
+ .dc_flex_Card{
+    text-align: center;
+ }  
+
+
+ .img-show-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .cont1{
+    
+ }
+
+ .anun{
+    padding: 10px;
+    background-color: rgb(var(--azul_Osc)) !important;
+    color: white !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+ }
+ .bloque {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+ }
+ .bloque>div {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+ .bloque>div img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+ }
+
+.medio>div {
+    height: 40vh;
+}
+.medio>div+div {
+    height: 50vh;
+}
+
+/* Cuadro molestoso de las imagenes */
+
+.cuadro{
+   position: absolute; 
+   top: 65%; 
+   left: 0; 
+  padding: 30px 250px ;
+     background-color: rgba(150, 150, 155, 0.836); 
+     display: flex; 
+     align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      transition: all ease 0.3s;
+}
+
+.cuadro:hover{
+   background-color: rgba(150, 150, 155, 0.215);
+   color: rgba(255, 255, 255, 0.219); 
+
+}
+
+#menu-main-menu a:hover{
+   cursor: pointer;
+   color: rgb(192, 192, 192) !important;
+}
+
+#antidoto{
+   font-family: 'Ubuntu', sans-serif !important;
+   font-weight: 700;
+
+}
+
+/* FOOTER */
+
+.footer-styling{
+   padding: 50px;
+   background-color: rgb(var(--azul_Osc));
+}
+
+.footer-styling img{
+   width: 15vw;
+   
+}
+
+
+.contacto{
+   width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+   .textos-responsivos{
+       width: 80vw !important;
+   }
+
+
+   .cuadro{
+      display: none;
+   }
+ }
